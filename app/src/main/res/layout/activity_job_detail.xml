@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/ivJobDetailPic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/job_detail_height"
+            android:foreground="#3333"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_placeholder" />
+
+
+        <TextView
+            android:id="@+id/tvJobDetailTitle"
+            style="@style/white_text_black_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivJobDetailPic"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:layout_marginLeft="@dimen/margin_medium_3"
+            android:paddingRight="@dimen/margin_medium"
+            android:text="@string/job_title"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_heading_2x" />
+
+        <TextView
+            android:id="@+id/tvJobDescTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvJobDetailTitle"
+            android:layout_below="@id/tvJobDetailTitle"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/job_desc"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tvJobDetailDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvJobDescTitle"
+            android:layout_below="@id/tvJobDescTitle"
+            android:lineSpacingMultiplier="1.3"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/job_desc_in_few"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tvJobSalaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvJobDescTitle"
+            android:layout_below="@id/tvJobDetailDesc"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/job_salary_title"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:id="@+id/tvJobDetailSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvJobSalaryTitle"
+            android:layout_below="@id/tvJobSalaryTitle"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/job_salary"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <TextView
+            android:id="@+id/tvJobLocationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvJobDetailSalary"
+            android:layout_below="@id/tvJobDetailSalary"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/job_location_title"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvJobDetailLocation"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvJobLocationTitle"
+            android:layout_below="@id/tvJobLocationTitle"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/job_location"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/apply_btn_height"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_regular_2x"
+            android:background="@color/accent"
+            android:text="@string/apply_forthis_job"
+            android:textAllCaps="false"
+            android:textColor="@color/white_full" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivJobPic"
+        android:layout_width="@dimen/job_pic_width"
+        android:layout_height="@dimen/job_pic_height"
+        android:layout_margin="@dimen/margin_medium"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_placeholder" />
+
+    <TextView
+        android:id="@+id/tvJobTitle"
+        style="@style/white_text_black_border"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_toEndOf="@id/ivJobPic"
+        android:text="@string/job_title"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_heading_1x" />
+
+    <TextView
+        android:id="@+id/tvJobSalary"
+        style="@style/white_text_black_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tvJobTitle"
+        android:layout_marginLeft="@dimen/margin_xxlarge"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/job_salary"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular" />
+
+    <TextView
+        android:id="@+id/tvJobDescInFew"
+        style="@style/white_text_black_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvJobTitle"
+        android:layout_below="@id/tvJobTitle"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:text="@string/job_desc_in_few"
+        android:textColor="@color/secondary_text" />
+
+    <TextView
+        android:id="@+id/tvJobDuration"
+        style="@style/white_text_black_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ivJobPic"
+        android:layout_below="@id/ivJobPic"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:drawableLeft="@drawable/ic_access_time_black"
+        android:drawablePadding="@dimen/margin_small"
+        android:text="@string/job_duration"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <TextView
+        android:id="@+id/tvJobLocation"
+        style="@style/white_text_black_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivJobPic"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:layout_toEndOf="@id/tvJobDuration"
+        android:drawableLeft="@drawable/ic_location_on_black"
+        android:text="@string/job_location"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/ivJobPic"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        android:layout_marginRight="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/bg_round_border_button"
+        android:onClick="onTapApplyJob"
+        android:text="@string/apply"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvJobLocation"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@color/divider" />
+
+
+</RelativeLayout>

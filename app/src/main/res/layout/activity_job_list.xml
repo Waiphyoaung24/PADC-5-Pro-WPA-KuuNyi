@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.waiphyoag.kuunyiapp.activities.JobListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <xyz.waiphyoag.kuunyiapp.components.SmartRecyclerView
+            android:id="@+id/rvJobList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </xyz.waiphyoag.kuunyiapp.components.SmartRecyclerView>
+
+
+    </RelativeLayout>
+
+    <xyz.waiphyoag.kuunyiapp.components.FabMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:itemCount="two"
+        app:position="bottomRight">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:alpha="0"
+            android:backgroundTint="@color/accent"
+            android:src="@drawable/ic_create_new"
+            android:visibility="gone"
+            app:fabSize="mini"
+            app:useCompatPadding="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:alpha="0"
+            android:src="@drawable/ic_whatshot"
+            android:visibility="gone"
+            app:backgroundTint="@color/accent"
+            app:fabSize="mini"
+            app:useCompatPadding="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_add"
+            android:visibility="visible"
+            app:fabSize="normal"
+            app:useCompatPadding="true"
+
+            />
+
+    </xyz.waiphyoag.kuunyiapp.components.FabMenu>
+
+
+</android.support.design.widget.CoordinatorLayout>

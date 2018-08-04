@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">KuuNyiApp</string>
+    <string name="msg_generic_no_data">No Data To Display</string>
+    <string name="lbl_refresh">Refreshing</string>
+    <string name="job_title">HouseKeeping Service</string>
+    <string name="job_salary">$ 2500</string>
+    <string name="job_desc_in_few">Our job description directory contains job description examples covering all the most popular roles and responsibilty.We have of job descriptions you can quickly download and modify to suit your unique business requirements. You\'ll find a job description example for most common jobs.</string>
+    <string name="job_duration">6 days</string>
+    <string name="job_location">Botahtaung</string>
+    <string name="apply">Apply</string>
+    <string name="job_desc">Description</string>
+    <string name="job_salary_title">Price</string>
+    <string name="job_location_title">Location</string>
+    <string name="apply_forthis_job">Apply For This Job</string>
+    <string name="add_job_post">Add Job Post</string>
+</resources>
